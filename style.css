@@ -1,0 +1,909 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    width:35vw;
+    cursor: pointer;
+}
+
+a:link, a:active, a{
+
+    text-decoration: none;
+    color:rgba(0, 0, 0);
+}
+
+header{
+    font-family:"Cormorant Garamond";
+    font-weight: bold;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.logo img{
+    width:100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width:20vw;
+    cursor: pointer;
+}
+
+.logo p{
+    position: absolute;
+    font-size: 30px;
+}
+
+.phone{
+    width:20vw;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slide {
+    height:100vh;
+    background-image: url(picture/backgroung2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slide div{
+    color: white;
+    font-family:"Cormorant Garamond";
+    font-size: 40px;
+    width: 35vw;
+    padding: 0 10vw;
+}
+
+.menu{
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu input, .menu select{
+    width:15vw;
+    height: 3vh;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: "Cormorant Garamond";
+    font-weight: bold;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+label{
+    font-family: "Cormorant Garamond";
+    font-weight: bold;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.menu button{
+    width:10vh;
+    height: 10vh;
+    border:none;
+    background-color: rgba(255, 99, 71, 0.8);
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.plan__cart{
+    font-family: "Cormorant Garamond";
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding:5vh 10vw 0;
+}
+
+.plan img{
+    width:10vw;
+}
+
+.plan__cart div:first-child{
+    width:45vw;
+}
+
+.plan__cart div p{
+    width:20vw;
+    font-family: "Cormorant Garamond";
+    font-weight: bold;
+    font-size: 1vw;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.plan__cart h2{
+    font-size: 40px;
+}
+
+.plan__cart_paris{
+    width:10vw;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: "Cormorant Garamond";
+    font-size: 20px;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.plan__cart_paris span:nth-child(4){
+    color: rgba(255, 99, 71, 0.8);
+}
+
+.plan__cart button{
+    width:10vw;
+    height: 3vw;
+    border:none;
+    background-color: rgba(255, 99, 71, 0.8);
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.button button{
+    width: 25px;
+    height: 25px;
+    border:none;
+    background-color: rgba(65, 64, 64, 0.2);
+    font-family: "Cormorant Garamond";
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding:0 10vw;
+}
+
+button:hover{
+    background-color: rgba(255, 99, 71, 0.8);
+}
+
+.room{
+    font-family: "Cormorant Garamond";
+}
+
+.roomcart{
+    display: grid;
+    grid-template-areas:"roomcart1 roomcart2 roomcart3"
+                        "roomcart1 roomcart4 roomcart5";
+    grid-template-rows: 40vh,40vh;
+    grid-template-columns: repeat(3, 25vw);
+    gap: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw;
+    cursor: pointer;
+}
+.room img{
+    width:20vw;
+}
+
+.roomcart p{
+    position: relative;
+    top:50%;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+
+}
+.roomcart span{
+    position: relative;
+    top:50%;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+ .roomcart1{
+    grid-area: roomcart1;
+    background-image: url("picture/bedroom.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+}
+.roomcart2{
+    grid-area: roomcart2;
+    background-image: url("picture/room.jpg");
+    background-size: cover;
+    height: 20vw;
+}
+.roomcart3{
+    grid-area: roomcart3;
+    background-image: url("picture/room2.jpg");
+    background-size: cover;
+    height: 20vw;
+}
+.roomcart4{
+    grid-area: roomcart4;
+    background-image: url("picture/room3.jpg");
+    background-size: cover;
+    height: 20vw;
+}
+.roomcart5{
+    grid-area: roomcart5;
+    background-image: url("picture/room1.jpg");
+    background-size: cover;
+    height: 20vw;
+}
+.room_head{
+    padding:0 10vw;
+
+}
+.room_head h2{
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+}
+
+.cart{
+    display: flex;
+    justify-content: flex-start;
+    height: 50vh;
+    padding-left: 10vw;
+    gap:5px;
+    position: relative;
+}
+.cart div{
+    color: white;
+    font-family: "Cormorant Garamond";
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.cart1{
+    font-size: 30px;
+    width: 20vw;
+    background-image: url('picture/people.jpg');
+    background-size: cover;
+}
+
+.block1{
+    font-size: 30px;
+    position:absolute;
+    width: 20vw;
+    left:10vw;
+    bottom:0;
+    right:0;
+    background:rgba(255, 255, 255, 0.4);
+    display:none;
+}
+.cart1:hover .block1{
+    display:block;
+    }
+.cart2{
+    font-size: 30px;
+    width: 20vw;
+    background-image: url("picture/peoples.jpg");
+    background-size: cover;
+    background-position:center;
+}
+.block2{
+    font-size: 30px;
+    position:absolute;
+    width: 20vw;
+    left:5px;
+    bottom:0;
+    right:0;
+    background:rgba(255, 255, 255, 0.4);
+    margin-left: 30vw;
+    display:none;
+}
+.cart2:hover .block2{
+    display:block;
+}
+
+.cart3{
+    font-size: 30px;
+    width: 20vw;
+    background-image: url("picture/pexels-asad-photo-maldives-1024989.jpg");
+    background-size: cover;
+    background-position:center;
+}
+.block3{
+    font-size: 30px;
+    position:absolute;
+    width: 20vw;
+    left:10px;
+    bottom:0;
+    right:0;
+    background:rgba(255, 255, 255, 0.4);
+    margin-left: 50vw;
+    display:none;
+}
+.cart3:hover .block3{
+    display:block;
+}
+.cart4{
+    font-size: 30px;
+    width: 20vw;
+    background-image: url("picture/pexels-jonathan-borba-5677609.jpg");
+    background-size: cover;
+    background-position:center;
+}
+.block4{
+    font-size: 30px;
+    position:absolute;
+    width: 20vw;
+    left:15px;
+    bottom:0;
+    right:0;
+    background:rgba(255, 255, 255, 0.4);
+    margin-left: 70vw;
+    display:none;
+}
+.cart4:hover .block4{
+    display:block;
+}
+.experience{
+    color: rgba(1, 1, 1, 0.8);
+    font-size: 20px;
+    width: 35vw;
+    padding-left: 10vw;
+    font-family: "Cormorant Garamond";
+}
+.subscribe{
+    font-family: "Cormorant Garamond";
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.subscribe button{
+    width: 10vw;
+    height: 4vh;
+    border: none;
+    background-color: rgba(255, 99, 71, 0.8);
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 0 6px
+}
+.subscribe input{
+    width:20vw;
+    height: 4vh;
+    border: none;
+    font-family: "Cormorant Garamond";
+    font-weight: bold;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.8);
+    padding:0 10px;
+}
+.subscribe div{
+    border:1px solid rgba(0, 0, 0, 0.2);
+}
+.footer{
+    font-family:"Cormorant Garamond";
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 10vh;
+}
+.share{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.share img{
+    width: 20px;
+}
+.back, .plan{
+    background-image: url(picture/22.png);
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+@media (min-width:1276px) and (max-width:1850px){
+    .slide div{
+        font-size: 35px;
+        width: 55vw;
+        padding: 0 5vw;
+    }
+
+    .plan img{
+        width:13vw;
+    }
+        
+    .plan__cart div p{
+        width:20vw; 
+        font-size: 17px;
+    }
+
+    .plan__cart_paris{
+        width:13vw;
+    }
+
+    .plan__cart button{
+        font-size: 17px;
+    }
+}
+@media (min-width:900px) and (max-width:1275px){
+    nav{
+        display: flex;
+        justify-content: space-around;
+        width:50vw;
+        cursor: pointer;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        width:15vw;
+        cursor: pointer;
+    }
+    
+    .phone{
+        width:15vw;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slide {
+        height:50vh;
+    }
+    .slide div{
+        font-size: 30px;
+        width: 50vw;
+        padding: 0 5vw;
+    }
+
+    .menu{
+        padding: 0 5vw;
+    }
+
+    .plan__cart{
+        padding:5vh 5vw 0;
+    }
+
+    .plan img{
+        width:15vw;
+    }  
+    
+    .plan__cart div p{
+        width:25vw;
+        font-size: 17px;
+    }
+
+    .plan__cart_paris{
+        width:15vw;
+    }
+
+    .plan__cart button,.subscribe button{
+        font-size: 17px;
+    }
+
+    .button{
+        padding:0 10vw;
+    }
+
+    .roomcart{
+        justify-content: start;
+        padding: 0 5vw;
+    }
+    
+    .room_head{
+        padding:0 5vw;
+    }
+
+    .cart{
+        justify-content: flex-start;
+        height: 40vh;
+        padding-right:5vw;
+    }
+      
+    .block1, .block2, .block3, .block4{
+        font-size: 20px;
+        bottom: 20%;
+    }
+       
+    .experience{
+        width: 50vw;
+        padding-left: 5vw;
+    }
+}
+
+@media (min-width:601px) and (max-width:899px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img{
+        width:70px;
+    }
+    
+    .logo p{
+        position: absolute;
+        font-size: 20px;
+    }
+
+    .phone{
+        flex-direction: column;
+    }
+
+    .slide {
+        height:40vh;
+    }
+
+    .slide div{
+        font-size: 16px;
+        width: 70vw;
+        padding: 0 5vw;
+    }
+
+    .menu{
+        padding: 0;
+    }
+
+    .menu input, .menu select{
+        width:17vw;
+        height: 3vh;
+        font-size: 17px;
+    }
+
+    label{
+        font-size: 17px;
+    }
+    .menu button{
+        width:7vh;
+        height: 7vh;
+        font-size: 17px;
+    }
+    .plan__cart{
+        padding:5vw 0;
+    }
+
+    .plan__cart div:nth-child(3), 
+    .plan__cart div:nth-child(4){
+        display: none;
+    }
+
+    .plan img{
+        width:25vw;
+    }
+
+    .plan__cart div:first-child{
+        width:40vw;
+    }
+
+    .plan__cart div p{
+        width:40vw;
+        font-size: 17px;
+    }
+
+    .plan__cart_paris{
+        width:25vw;
+    }
+
+    .plan__cart button{
+        width:20vw;
+        height: 5vw;
+        font-size: 17px;
+    }
+
+    .button{
+        justify-content: space-around;
+        padding:0 0 0 40vw;
+    }
+
+    .button button{
+        width: 40px;
+        height: 40px;
+    }
+
+    .room_head{
+        padding:0 5vw;
+    }
+    
+    .room_head h2{
+        font-size: 25px;
+    }
+
+    .roomcart{
+        display: grid;
+        grid-template-areas:"roomcart1 roomcart2"
+                            "roomcart1 roomcart3"
+                            "roomcart4 roomcart5";
+        grid-template-columns: repeat(2, 45vw);
+        gap: 5px;
+        position: relative;
+        padding:0;
+    }
+
+    .roomcart1{
+        grid-area: roomcart1;
+        background-image: url("picture/bedroom.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 60vw;
+    }
+
+    .roomcart2,.roomcart3, .roomcart4,.roomcart5 {
+        height: 30vw;
+    }
+
+    .roomcart p, .roomcart span{
+        color: rgb(0, 0, 0);  
+    }
+
+    .experience{
+        width: 60vw;
+        padding-left: 5vw;
+    }
+
+    .cart{
+        display: grid;
+        grid-template-areas:"cart1 cart2"
+                            "cart3 cart4";      
+        grid-template-columns: repeat(2, 43vw);      
+        padding:0 5vw;
+        gap:5px;
+        position: relative;
+    }
+
+    .cart div{
+        color: white;
+        font-family: "Cormorant Garamond";
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    
+    .cart1, .cart2, .cart3, .cart4{
+        font-size: 30px;
+        width: 100%;
+    }
+    
+    .block1{
+        font-size: 17px;
+        position:absolute;
+        width: 43vw;
+        left:5vw;
+        bottom:50%;
+        background:rgba(255, 255, 255, 0.4);
+        display:none;
+    }
+
+    .cart1:hover .block1{
+        display:block;
+    }
+    
+    .block2{
+        font-size: 17px;
+        position:absolute;
+        width: 43vw;
+        left:48vw;
+        bottom:50%;
+        margin-left: 5px;
+    }
+   
+    .block3{
+        font-size: 17px;
+        position:absolute;
+        width: 43vw;
+        left:5vw;
+        margin-left: 0;
+    }
+    
+    .block4{
+        font-size: 17px;
+        position:absolute;
+        width: 43vw;
+        left:48vw;
+        margin-left: 5px;
+    }
+
+    .subscribe button{
+        width: 20vw;
+        height: 4vh;
+        font-size: 17px;
+    }
+
+    .subscribe input{
+        width:40vw;
+        font-size: 17px;
+    }
+}
+
+@media (min-width:319px) and (max-width:600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img{
+        width:70px;
+    }
+  
+    .logo p{
+        position: absolute;
+        font-size: 20px;
+    }
+
+    .phone{
+        flex-direction: column;
+    }
+
+    .slide {
+        height:40vh;
+    }
+
+    .slide div{
+        font-size: 16px;
+        width: 70vw;
+        padding: 0 5vw;
+    }
+
+    .menu{
+        padding: 0 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:10px;
+    }
+
+    .menu input, .menu select{
+        width:50vw;
+    }
+
+    .menu button{
+        width:13vh;
+        height: 3vh;
+        font-size: 17px;
+        justify-content: center;
+    }
+
+    .plan__cart{
+        display:flex;
+        flex-direction: column;
+        padding:0 5vw;
+    }
+   
+    .plan__cart div p{
+        width:80vw;
+        font-size: 17px;
+    }
+
+    .plan img{
+        width:70vw;
+    }
+
+    .plan__cart_paris{
+        width:50%;
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        align-items: center; 
+        font-size: 15px;
+    }
+
+    .plan__cart button{
+        width:13vh;
+        height: 3vh;
+        font-size: 17px;
+    }
+
+    .plan__cart div:nth-child(3), 
+    .plan__cart div:nth-child(4), 
+    .plan__cart div:nth-child(5){
+        display: none;
+    }
+
+    .plan__cart div:nth-child(2){
+        margin:0 5vw;
+    }
+
+    .button{
+            justify-content: space-around;
+            margin: 0 auto;
+            width: 60%;
+    }
+
+    .button button{
+        width: 40px;
+        height: 40px;
+    }
+
+    .roomcart{
+        display: block;
+        position: relative;
+        padding: 0 5vw;
+    }
+    .room img{
+        width:20vw;
+    }
+
+    .roomcart p{
+        position: relative;
+        top:50%;
+        font-size: 30px;
+    }
+    .roomcart span{
+        position: relative;
+        top:50%;
+        font-size: 20px;
+    }
+
+    .roomcart1,.roomcart2,
+    .roomcart3,.roomcart4,
+    .roomcart5{
+        height: 80vw;
+    }
+
+    .room_head{
+        padding:5vw;
+    }
+
+    .room_head p{
+        font-size:17x;
+        margin: 0;
+    }
+
+    .cart div:not(:first-child){
+        display: none;
+        height: 20vh;
+        padding-left: 0;
+        gap:0px;
+        position: relative;
+    }
+
+    .cart1{
+        font-size: 30px;
+        width: 100vw;
+        background-position: top;
+    }
+
+    .block1{
+        font-size: 20px;
+        width: 100%;
+        left:0vw;
+    }
+
+    .experience{
+        font-size: 17px;
+        width: 80vw;
+        padding-left: 5vw;
+    }
+
+    .subscribe button{
+        width: 30vw;
+        height: 4vh;
+        font-size: 17px;
+    }
+
+    .subscribe input{
+        width:50vw;
+        font-size: 17px;
+    }
+}
+ 
+    
+    
+     
+    
+    
+    
+    
+    
+
+
+
+
